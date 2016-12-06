@@ -11,6 +11,7 @@ import { ModelService } from '../shared/model/model.service';
   template: `
     <div class="todo">
       Todo component
+      <a routerLinkActive="router-link-active" routerLink="../testroute">Test Link</a>
       <form #f="ngForm" (ngSubmit)="addTodo(newTodo)">
         <input name="newTodo" [(ngModel)]="newTodo">
         <button>Submit</button>
